@@ -22,8 +22,11 @@ if guess < 5:
                 else:
                     print("Sorry you haven't guessed correctly")
                     retry = input('Do you want to play again?(Y/N)')
+            else:
+                print('Congrats! You beat the game.'.upper())
+                retry = 'n'
         else:
-            print('Cool! Thanks for playing.')
+            print('Thanks for playing.')
     else:
         print("Sorry you haven't guessed correctly")
         retry = input('Do you want to play again?(Y/N)')
@@ -45,8 +48,11 @@ if guess < 5:
                 else:
                     print("Sorry you haven't guessed correctly")
                     retry = input('Do you want to play again?(Y/N)')
+            else:
+                print('Congrats! You beat the game.'.upper())
+                retry = 'n'
         else:
-            print('Cool! Thanks for playing.')
+            print('Thanks for playing.')
 
 
 elif guess > 5:
@@ -72,8 +78,11 @@ elif guess > 5:
                 else:
                     print("Sorry you haven't guessed correctly")
                     retry = input('Do you want to play again?(Y/N)')
+            else:
+                print('Congrats! You beat the game.'.upper())
+                retry = 'n'
         else:
-            print('Cool! Thanks for playing.')
+            print('Thanks for playing.')
     else:
         print("Sorry you haven't guessed correctly")
         retry = input('Do you want to play again?(Y/N)')
@@ -95,7 +104,10 @@ elif guess > 5:
                 else:
                     print("Sorry you haven't guessed correctly")
                     retry = input('Do you want to play again?(Y/N)')
+            else:
+                print('Congrats! You beat the game.'.upper())
+                retry = 'n'
         else:
-            print('Cool! Thanks for playing.')
+            print('Thanks for playing.')
 else:
     print('Congrats! You beat the game.'.upper())
