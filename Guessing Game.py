@@ -1,11 +1,11 @@
-guess = int(input('Please guess a number between 1 and 10 '))
+guess = int(input('Guess a number between 1 and 10 '))
 if guess < 5:
     guess = int(input('Guess higher '))
     if guess == 5:
         print('you guessed it!'.upper())
         retry = input('Do you want to play again?(Y/N)')
         while str(retry.upper()) == 'Y':
-            guess = int(input('Please guess a number between 1 and 10 '))
+            guess = int(input('Guess a number between 1 and 10 '))
             if guess < 5:
                 guess = int(input('Guess higher '))
                 if guess == 5:
@@ -31,7 +31,7 @@ if guess < 5:
         print("Sorry you haven't guessed correctly")
         retry = input('Do you want to play again?(Y/N)')
         while str(retry.upper()) == 'Y':
-            guess = int(input('Please guess a number between 1 and 10 '))
+            guess = int(input('Guess a number between 1 and 10 '))
             if guess < 5:
                 guess = int(input('Guess higher '))
                 if guess == 5:
@@ -61,7 +61,7 @@ elif guess > 5:
         print('you guessed it!'.upper())
         retry = input('Do you want to play again?(Y/N)')
         while str(retry.upper()) == 'Y':
-            guess = int(input('Please guess a number between 1 and 10 '))
+            guess = int(input('Guess a number between 1 and 10 '))
             if guess < 5:
                 guess = int(input('Guess higher '))
                 if guess == 5:
@@ -87,7 +87,7 @@ elif guess > 5:
         print("Sorry you haven't guessed correctly")
         retry = input('Do you want to play again?(Y/N)')
         while str(retry.upper()) == 'Y':
-            guess = int(input('Please guess a number between 1 and 10 '))
+            guess = int(input('Guess a number between 1 and 10 '))
             if guess < 5:
                 guess = int(input('Guess higher '))
                 if guess == 5:
