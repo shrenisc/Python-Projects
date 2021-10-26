@@ -11,9 +11,9 @@ if guess < answer:
         print(f'You took {number} tries to get the answer.')
     else:
         print(f"Sorry you haven't guessed correctly.")
-        retry = input('Do you want to try again?(Y/N)')
+        retry = input('Do you want another shot at guessing the number?(Y/N)')
         while str(retry.upper()) == 'Y' or str(retry.upper()) == 'YES':
-            guess = int(input('Guess a number between 1 and 10 '))
+            guess = int(input('Take a guess again '))
             number += 1
             if guess < answer:
                 guess = int(input('Guess higher '))
@@ -24,7 +24,7 @@ if guess < answer:
                     retry = 'n'
                 else:
                     print(f"Sorry you haven't guessed correctly.")
-                    retry = input('Do you want to try again?(Y/N)')
+                    retry = input('Do you want another shot at guessing the number?(Y/N)')
             elif guess > answer:
                 guess = int(input('Guess lower '))
                 number += 1
@@ -34,7 +34,7 @@ if guess < answer:
                     retry = 'n'
                 else:
                     print(f"Sorry you haven't guessed correctly.")
-                    retry = input('Do you want to try again?(Y/N)')
+                    retry = input('Do you want another shot at guessing the number?(Y/N)')
             else:
                 print('you guessed it!'.upper())
                 print(f'You took {number} tries to get the answer.')
@@ -52,9 +52,9 @@ elif guess > answer:
 
     else:
         print(f"Sorry you haven't guessed correctly.")
-        retry = input('Do you want to try again?(Y/N)')
+        retry = input('Do you want another shot at guessing the number?(Y/N)')
         while str(retry.upper()) == 'Y' or str(retry.upper()) == 'YES':
-            guess = int(input('Guess a number between 1 and 10 '))
+            guess = int(input('Take a guess again '))
             number += 1
             if guess < answer:
                 guess = int(input('Guess higher '))
@@ -65,7 +65,7 @@ elif guess > answer:
                     retry = 'n'
                 else:
                     print(f"Sorry you haven't guessed correctly.")
-                    retry = input('Do you want to try again?(Y/N)')
+                    retry = input('Do you want another shot at guessing the number?(Y/N)')
             elif guess > answer:
                 guess = int(input('Guess lower '))
                 number += 1
@@ -75,7 +75,7 @@ elif guess > answer:
                     retry = 'n'
                 else:
                     print(f"Sorry you haven't guessed correctly.")
-                    retry = input('Do you want to try again?(Y/N)')
+                    retry = input('Do you want another shot at guessing the number?(Y/N)')
             else:
                 print('you guessed it!'.upper())
                 print(f'You took {number} tries to get the answer.')
